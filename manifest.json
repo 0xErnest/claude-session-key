@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Claude SessionKey",
+  "version": "1.0.0",
+  "description": "手动读取并复制当前 Chrome 用户的 Claude SessionKey，仅在本地处理。",
+  "permissions": ["cookies", "clipboardWrite"],
+  "host_permissions": ["https://claude.ai/*"],
+  "incognito": "split",
+  "action": {
+    "default_title": "Claude SessionKey",
+    "default_popup": "popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'none'; connect-src 'none'"
+  }
+}
